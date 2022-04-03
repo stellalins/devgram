@@ -7,6 +7,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { PostModule } from './components/post/post.module';
 import { AsideDataComponent } from './components/aside-data/aside-data.component';
 import { StoriesModule } from './components/stories/stories.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +20,9 @@ import { StoriesModule } from './components/stories/stories.module';
   imports: [
     BrowserModule,
     PostModule,
-    StoriesModule
+    StoriesModule,
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
